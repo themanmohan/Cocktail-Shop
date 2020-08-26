@@ -6,7 +6,7 @@ export default function SingleCocktail() {
   const {id}=useParams()
   const [loading,setLoadig]=useState(false)
    const [cocktail,setCocktail]=useState('')
-   const[demo,setDemo]=useState('')
+
 
     
         console.log(cocktail)
@@ -25,7 +25,7 @@ export default function SingleCocktail() {
    
 
               const ingredients=[strIngredient1,strIngredient2,strIngredient3,strIngredient4,strIngredient5]
-                        setDemo(ingredients)
+                       
                        
               const newcocktail={
                 name,
@@ -47,7 +47,6 @@ export default function SingleCocktail() {
           }
           setLoadig(false)
          }
-         console.log(cocktail)
          getApi()
    },[id])
 
